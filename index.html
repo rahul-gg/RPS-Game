@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <h2>Pick Your Choice</h2>
+        <div class="rps">
+            <div id="rock" class="pick" onclick="rock()"><i class="fa-solid fa-hand-back-fist fa-3x"></i></div>
+            <div id="paper" class="pick" onclick="paper()"><i class="fa-solid fa-hand fa-3x"></i></div>
+            <div id="sciss" class="pick" onclick="scissor()"><i class="fa-solid fa-hand-scissors fa-3x"></i></div>
+        </div>
+        <div style="display:block;margin:auto;width:100px;"><button class="play btn-primary" onclick="play()">PLAY</button></div>
+        <p id="userpick"></p>
+        <p id="computer-pick"></p>
+        <p id="result"></p>
+        <br>
+        <div style="display:block;margin:auto;width:100px;"><button class="playagain btn-primary" onclick="playagain()">PLAY AGAIN</button></div>
+    </div>
+    <script src="https://kit.fontawesome.com/2717abbe28.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
