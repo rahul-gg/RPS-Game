@@ -59,7 +59,8 @@ function playagain(){
     compPick=" "
     document.getElementById("userpick").textContent=" "
     document.getElementById("computer-pick").textContent=" "
-        document.getElementById("paper").style.backgroundColor="white";
+    document.getElementById("result").textContent=" "
+    document.getElementById("paper").style.backgroundColor="white";
     document.getElementById("rock").style.backgroundColor="white";
     document.getElementById("paper").style.backgroundColor="white";
     document.getElementById("sciss").style.backgroundColor="white";
