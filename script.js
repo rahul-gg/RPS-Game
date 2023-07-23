@@ -1,27 +1,29 @@
 let yourpick=" "
 let compPick=" "
-
+let rockDiv=document.getElementById("rock")
+let paperDiv=document.getElementById("paper")
+let scissDiv=document.getElementById("sciss")
 function rock(){
 yourpick="rock"
-document.getElementById("rock").style.backgroundColor="rgb(85, 201, 85)";
-document.getElementById("paper").style.backgroundColor="white";
-document.getElementById("sciss").style.backgroundColor="white";
+rockDiv.style.backgroundColor="rgb(85, 201, 85)";
+paperDiv.style.backgroundColor="white";
+scissDiv.style.backgroundColor="white";
 console.log(yourpick)
 }
 
 function paper(){
     yourpick="paper"
-    document.getElementById("paper").style.backgroundColor="rgb(85, 201, 85)";
-    document.getElementById("rock").style.backgroundColor="white";
-    document.getElementById("sciss").style.backgroundColor="white";
+    paperDiv.style.backgroundColor="rgb(85, 201, 85)";
+    rockDiv.style.backgroundColor="white";
+    scissDiv.style.backgroundColor="white";
     console.log(yourpick)
 }
 
 function scissor(){
     yourpick="scissor"
-    document.getElementById("sciss").style.backgroundColor="rgb(85, 201, 85)";
-    document.getElementById("paper").style.backgroundColor="white";
-    document.getElementById("rock").style.backgroundColor="white";
+    scissDiv.style.backgroundColor="rgb(85, 201, 85)";
+    paperDiv.style.backgroundColor="white";
+    rockDiv.style.backgroundColor="white";
     console.log(yourpick)
 }
 
@@ -60,8 +62,8 @@ function playagain(){
     document.getElementById("userpick").textContent=" "
     document.getElementById("computer-pick").textContent=" "
     document.getElementById("result").textContent=" "
-    document.getElementById("paper").style.backgroundColor="white";
-    document.getElementById("rock").style.backgroundColor="white";
-    document.getElementById("paper").style.backgroundColor="white";
-    document.getElementById("sciss").style.backgroundColor="white";
+    paperDiv.style.backgroundColor="white";
+    rockDiv.style.backgroundColor="white";
+    paperDiv.style.backgroundColor="white";
+    scissDiv.style.backgroundColor="white";
 }
