@@ -29,15 +29,9 @@ function scissor(){
 
 function play(){
 let random=Math.floor(Math.random()*3)
-if(random==0){
-    compPick="rock"
-}
-else if(random==1){
-    compPick="paper"
-}
-else{
-    compPick="scissor"
-}
+let arr=["rock","paper","scissor"]
+compPick=arr[random]
+
 console.log(compPick)
 document.getElementById("userpick").innerText="You picked"+" "+ yourpick
 document.getElementById("computer-pick").innerText="The computer picked"+" "+ compPick
@@ -49,7 +43,7 @@ else if((yourpick=="scissor"&&compPick=="rock") || (yourpick=="paper"&&compPick=
 document.getElementById("result").textContent="YOU LOSE"
 }
 else if(yourpick==" "){
-    document.getElementById("result").textContent="Pick your choice"
+    alert("Pick your choice")
 }
 else{
     document.getElementById("result").textContent="DRAW"
